@@ -1,3 +1,5 @@
+**English** · [简体中文](README.zh-CN.md)
+
 # friday-brain
 
 A shared, git-versioned brain for a team of personal Claude agents that you talk to on Telegram.
@@ -6,10 +8,6 @@ Each agent (Friday, Study, Feed, Dev, Trader) is a Claude Code session running i
 directory with its own role, permissions and memory, plus a common rule set and a common
 set of facts about you. Memory is plain Markdown in git, so you can read it, diff it, fix it
 and roll it back.
-
-> 中文简介：一套给多个 Telegram 私人助理 bot 共用的「大脑」。每个 bot 是一个在自己目录里运行的
-> Claude Code 会话，有自己的角色、权限和记忆；记忆是 git 里的 Markdown 文件，可读、可改、可回滚。
-> 配好 `.env` 里的 Telegram token、登录 `claude`，运行 `relay/relay.py` 即可使用。
 
 ```
 global/            rules every agent follows (CLAUDE.md) + facts about you (memory/)
@@ -88,6 +86,10 @@ Billing: the relay uses whatever `claude` is logged in with. A subscription logi
 against the subscription; an `ANTHROPIC_API_KEY` in the environment is billed per token.
 
 Tests: `python3 -m pytest relay` (offline; no network, no real Claude).
+
+## Documentation languages
+
+This README is available in English and Chinese. The agent prompts (`CLAUDE.md`) and example memories are English only: they are written for the model, and the agents reply in whatever language you write in.
 
 ## License
 
