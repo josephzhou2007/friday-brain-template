@@ -1,0 +1,5 @@
+{
+  "permissions": {
+    "deny": ["Bash", "Edit(../../global/**)", "Edit(../../shared/**)", "Write(../../global/**)", "Write(../../shared/**)", "Read(../../.env)"]
+  }
+}

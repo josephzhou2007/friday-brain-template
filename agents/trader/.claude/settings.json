@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/crypto.py:*)",
+      "Bash(python3 scripts/stock.py:*)",
+      "Bash(python3 scripts/volume_profile.py:*)",
+      "Bash(python3 scripts/volume_profile_recency.py:*)"
+    ],
+    "deny": ["Edit(../../global/**)", "Edit(../../shared/**)", "Write(../../global/**)", "Write(../../shared/**)", "Write(scripts/**)", "Edit(scripts/**)", "Read(../../.env)"]
+  }
+}

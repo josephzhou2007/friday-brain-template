@@ -1,0 +1,10 @@
+{
+  "owner_id": 0,
+  "bots": [
+    {"name": "friday", "agent": "friday", "token_env": "TELEGRAM_TOKEN_FRIDAY"},
+    {"name": "study",  "agent": "study",  "token_env": "TELEGRAM_TOKEN_STUDY"},
+    {"name": "feed",   "agent": "feed",   "token_env": "TELEGRAM_TOKEN_FEED"},
+    {"name": "dev",    "agent": "dev",    "token_env": "TELEGRAM_TOKEN_DEV"},
+    {"name": "trader", "agent": "trader", "token_env": "TELEGRAM_TOKEN_TRADER"}
+  ]
+}

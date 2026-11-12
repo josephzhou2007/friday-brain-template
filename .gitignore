@@ -1,0 +1,35 @@
+# secrets: never commit
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+secrets/
+*credentials*
+# your personal strings for the pre-commit hook (see hooks/pre-commit)
+.private-patterns
+
+# local config and runtime state
+config.json
+.state/
+**/.claude/settings.local.json
+sessions/
+*.log
+*.sqlite
+*.db
+__pycache__/
+.pytest_cache/
+.DS_Store
+.tmp/
+
+# raw media never belongs in the brain
+*.ogg
+*.mp3
+*.wav
+*.m4a
+
+# drafts may quote private mail; keep them local
+agents/*/drafts/
+# chart output from the trader scripts
+agents/trader/scripts/*.png
